@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー — NeonDesk</title>
+<meta name="title-ja" content="プライバシーポリシー — NeonDesk">
+<meta name="title-en" content="Privacy Policy — NeonDesk">
+<link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="./"><img src="img/icon.png" alt=""><span class="grad">NeonDesk</span></a>
+    <div class="langs"><button data-lang="ja">日本語</button> <button data-lang="en">English</button></div>
+  </header>
+
+  <article class="doc" lang="ja">
+    <h1>プライバシーポリシー</h1>
+    <p class="meta">施行日：2026 年 11 月 14 日</p>
+    <p>NeonDesk（iPhone 版・Mac 版のアプリと、Mac 用の NeonDesk Host。以下「本アプリ」）は、あなたの個人情報を集めません。このページでは、本アプリが何をどこに保存し、何を送るのかを説明します。</p>
+
+    <h2>集める情報</h2>
+    <p>ありません。本アプリには、アカウント、広告、アクセス解析、行動の追跡、クラッシュの自動送信のいずれもありません。開発者が運営するサーバーもありません。</p>
+
+    <h2>通信について</h2>
+    <ul>
+      <li>画面の映像、クリック・文字入力などの操作、クリップボードの内容は、あなたがペアリングした機器どうしで直接やりとりされます。開発者やほかの第三者には送られません。</li>
+      <li>通信はすべて Noise プロトコル（X25519・ChaCha20-Poly1305・SHA-256）で暗号化され、機器ごとの鍵で互いを確かめます。</li>
+      <li>外出先からつなぐために Tailscale を使う場合、通信は Tailscale のネットワークを通ります（中身は本アプリの暗号化で守られたままです）。Tailscale の扱いは Tailscale のプライバシーポリシーに従います。</li>
+    </ul>
+
+    <h2>機器の中に保存するもの</h2>
+    <ul>
+      <li>ペアリングした Mac の名前・アドレス・公開鍵、最後につないだ日時、設定（画質・操作モードなど）：アプリの中に保存します。</li>
+      <li>機器ごとの秘密鍵：キーチェーンに保存し、ほかの機器やバックアップには移りません。</li>
+      <li>NeonDesk Host のログ（つないだ時刻・画質の調整など）：Mac の中（~/Library/Logs）にだけ保存します。画面の内容や入力した文字は記録しません。</li>
+    </ul>
+    <p>これらはアプリを削除するか、アプリ内でペアリングを解除すると消えます。</p>
+
+    <h2>使う機能と許可</h2>
+    <ul>
+      <li><b>カメラ</b>（iPhone）：Mac に表示された QR コードを読み取るためだけに使い、画像は保存も送信もしません。</li>
+      <li><b>ローカルネットワーク</b>：同じネットワークにある Mac を見つけてつなぐために使います。</li>
+      <li><b>Face ID / Touch ID</b>：Mac を操作する前に本人確認をするために使います。判定は OS が行い、本アプリは生体情報を受け取りません。</li>
+      <li><b>画面収録・アクセシビリティ</b>（NeonDesk Host）：ペアリングした機器に Mac の画面を送り、そこからの操作を Mac に届けるために使います。</li>
+    </ul>
+
+    <h2>子どものプライバシー</h2>
+    <p>本アプリは誰の個人情報も集めないため、13 歳未満の子どもの情報も集めません。</p>
+
+    <h2>このポリシーの変更</h2>
+    <p>内容を変えるときは、このページを更新し、施行日を改めます。</p>
+
+    <h2>お問い合わせ</h2>
+    <p><a href="support.html">サポートページ</a>からお問い合わせください。</p>
+  </article>
+
+  <article class="doc" lang="en">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective: November 14, 2026</p>
+    <p>NeonDesk (the iPhone and Mac apps and NeonDesk Host for Mac, together "the App") does not collect your personal information. This page explains what the App stores, where, and what it sends.</p>
+
+    <h2>Information we collect</h2>
+    <p>None. The App has no accounts, ads, analytics, tracking or automatic crash reporting, and the developer runs no servers.</p>
+
+    <h2>How connections work</h2>
+    <ul>
+      <li>Screen images, input such as clicks and typing, and clipboard contents travel directly between devices you have paired. They are never sent to the developer or any other third party.</li>
+      <li>All connections are encrypted with the Noise protocol (X25519, ChaCha20-Poly1305, SHA-256), and devices authenticate each other with per-device keys.</li>
+      <li>If you use Tailscale to connect from outside your home network, traffic passes through Tailscale's network (still protected by the App's own encryption). Tailscale's privacy policy applies to that service.</li>
+    </ul>
+
+    <h2>What is stored on your devices</h2>
+    <ul>
+      <li>Names, addresses and public keys of Macs you've paired, when you last connected, and your settings (quality, control mode, etc.) are stored inside the App.</li>
+      <li>Each device's private key is stored in the Keychain and never leaves that device or goes into backups.</li>
+      <li>NeonDesk Host keeps a log (connection times, quality adjustments) only on your Mac (~/Library/Logs). It never records screen contents or typed text.</li>
+    </ul>
+    <p>Deleting the App or unpairing a device removes this data.</p>
+
+    <h2>Permissions</h2>
+    <ul>
+      <li><b>Camera</b> (iPhone): used only to scan the QR code shown on your Mac. Images are never stored or sent.</li>
+      <li><b>Local Network</b>: used to find and connect to Macs on the same network.</li>
+      <li><b>Face ID / Touch ID</b>: used to verify it's you before you control a Mac. The system handles the check; the App never receives biometric data.</li>
+      <li><b>Screen Recording and Accessibility</b> (NeonDesk Host): used to send your Mac's screen to your paired devices and to apply their input on your Mac.</li>
+    </ul>
+
+    <h2>Children's privacy</h2>
+    <p>The App collects no personal information from anyone, including children under 13.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, we will update this page and its effective date.</p>
+
+    <h2>Contact</h2>
+    <p>Please reach us through the <a href="support.html">support page</a>.</p>
+  </article>
+
+  <footer>
+    <nav>
+      <a href="./"><span lang="ja">トップ</span><span lang="en">Home</span></a>
+      <a href="support.html"><span lang="ja">サポート</span><span lang="en">Support</span></a>
+    </nav>
+    <div>© 2026 NeonDesk</div>
+  </footer>
+</div>
+<script src="lang.js"></script>
+</body>
+</html>
