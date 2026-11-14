@@ -1,6 +1,6 @@
 // 日本語・英語の切り替え（初めは端末の言語。選んだら覚える）
 (function () {
-  var KEY = "neondesk-lang";
+  var KEY = "pocketdesk-lang";
   function pick() {
     try {
       var saved = localStorage.getItem(KEY);
