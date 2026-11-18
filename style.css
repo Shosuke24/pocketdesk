@@ -19,6 +19,7 @@ body {
     var(--bg);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+  word-break: auto-phrase;
 }
 a { color: var(--cyan); text-decoration: none; }
 a:hover { text-decoration: underline; }
@@ -36,6 +37,16 @@ header { display: flex; align-items: center; justify-content: space-between; pad
   padding: 4px 12px; font: inherit; font-size: 13px; cursor: pointer;
 }
 .langs button[aria-pressed="true"] { color: var(--text); border-color: var(--cyan); }
+.hright { display: flex; align-items: center; gap: 18px; }
+.nav { display: flex; gap: 16px; font-size: 14px; font-weight: 600; }
+.nav a { color: var(--dim); }
+.nav a:hover, .nav a[aria-current="page"] { color: var(--text); text-decoration: none; }
+@media (max-width: 600px) { .nav .wide { display: none; } .hright { gap: 12px; } }
+
+/* 2 行のボタン（App Store・ダウンロード） */
+.btn.two { flex-direction: column; align-items: flex-start; gap: 0; line-height: 1.25; padding: 10px 22px 11px; }
+.btn.two small { font-size: 12px; font-weight: 600; opacity: 0.75; }
+.btn.two b { font-size: 17px; word-break: keep-all; }
 
 .hero { padding: 48px 0 24px; text-align: center; }
 .hero h1 { font-size: clamp(38px, 7vw, 72px); line-height: 1.12; font-weight: 800; letter-spacing: -0.02em; }
@@ -68,7 +79,7 @@ section h2 { font-size: clamp(26px, 4vw, 36px); line-height: 1.25; margin-bottom
 .steps li span { color: var(--dim); font-size: 15px; }
 .split { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: center; }
 .split img { width: 100%; border-radius: 18px; border: 1px solid var(--line); }
-@media (max-width: 760px) { .split { grid-template-columns: 1fr; } }
+@media (max-width: 760px) { .split { grid-template-columns: 1fr; } .split > div { order: -1; } }
 
 .doc { max-width: 760px; }
 .doc h1 { font-size: clamp(28px, 5vw, 40px); margin: 24px 0 8px; }
@@ -83,3 +94,29 @@ code { background: rgba(255, 255, 255, 0.08); padding: 1px 6px; border-radius: 6
 
 footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 48px; color: var(--dim); font-size: 14px; }
 footer nav { display: flex; flex-wrap: wrap; gap: 18px; margin-bottom: 8px; }
+
+/* 中央寄せのリンク */
+.more { text-align: center; margin-top: 18px; font-size: 15px; }
+
+/* 見出しの組み方（日本語の詰め・文節で折り返す） */
+h1, h2, h3 { font-feature-settings: "palt"; word-break: auto-phrase; text-wrap: balance; }
+
+/* ---------- iPhone で見ている人向け ---------- */
+.onlym { display: none; }
+@media (max-width: 700px) { .onlym { display: block; } }
+.sendmac {
+  margin-top: 14px; padding: 14px; border-radius: 16px; font-size: 14px; color: #d9dcf0;
+  background: rgba(34, 227, 255, .06); border: 1px solid rgba(34, 227, 255, .25);
+}
+.sendmac b { color: var(--cyan); }
+.sendmac code { word-break: break-all; }
+.share { display: none; margin-top: 10px; font: inherit; font-weight: 800; font-size: 14px; color: #04121a; background: var(--cyan); border: 0; border-radius: 12px; padding: 9px 14px; cursor: pointer; }
+.can-share .share { display: inline-block; }
+
+@media (max-width: 520px) {
+  header { gap: 10px; }
+  .brand { font-size: 18px; gap: 8px; }
+  .brand img { width: 28px; height: 28px; }
+  .langs button { padding: 3px 9px; font-size: 12px; }
+  .btn.two b { font-size: 15.5px; }
+}

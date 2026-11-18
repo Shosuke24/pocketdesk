@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>使い方 — PocketDesk｜iPhone から Mac を操作</title>
+<meta name="title-ja" content="使い方 — PocketDesk｜iPhone から Mac を操作">
+<meta name="title-en" content="How to use PocketDesk — Control your Mac from your iPhone">
+<meta name="description" content="PocketDesk の使い方。Mac にアプリを入れて QR コードを読み取るだけで、iPhone から Mac を操作できます。無料・アカウント登録なし。How to set up PocketDesk and control your Mac from your iPhone.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PocketDesk">
+<meta property="og:title" content="PocketDesk の使い方 — iPhone から Mac を操作">
+<meta property="og:description" content="Mac にアプリを入れて QR コードを読み取るだけ。触って押す、なぞってスクロール。無料・アカウント登録なし。">
+<meta property="og:url" content="https://shosuke24.github.io/pocketdesk/guide.html">
+<meta property="og:image" content="https://shosuke24.github.io/pocketdesk/img/hero-ja.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="guide.css">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="./"><img src="img/icon.png" alt=""><span class="grad">PocketDesk</span></a>
+    <div class="hright">
+      <nav class="nav">
+        <a href="guide.html" aria-current="page"><span lang="ja">使い方</span><span lang="en">Guide</span></a>
+        <a class="wide" href="support.html"><span lang="ja">サポート</span><span lang="en">Support</span></a>
+      </nav>
+      <div class="langs"><button data-lang="ja">日本語</button> <button data-lang="en">English</button></div>
+    </div>
+  </header>
+
+  <!-- ヒーロー -->
+  <div class="ghero">
+    <div>
+      <span class="eyebrow"><span lang="ja">使い方ガイド</span><span lang="en">GETTING STARTED GUIDE</span></span>
+      <h1 lang="ja"><span class="nw">ソファから、</span><span class="nw">外出先から。</span><br><span class="nw grad">いつもの Mac を、</span><span class="nw grad">指先で。</span></h1>
+      <h1 lang="en">From the couch, from anywhere.<br><span class="grad">Your Mac at your fingertips.</span></h1>
+      <p class="lead" lang="ja">PocketDesk は、iPhone に Mac の画面を映して、触ってそのまま操作できるアプリです。準備は、Mac にアプリを入れて QR コードを読み取るだけ。</p>
+      <p class="lead" lang="en">PocketDesk puts your Mac's screen on your iPhone and lets you control it with a touch. Setup is just installing an app on your Mac and scanning a QR code.</p>
+      <div class="cta">
+        <a class="btn primary two" href="https://apps.apple.com/app/id6835004414">
+          <small lang="ja">iPhone 用・無料</small><small lang="en">Free for iPhone</small>
+          <b lang="ja">App Store で入手</b><b lang="en">Get it on the App Store</b>
+        </a>
+        <a class="btn two" href="#start">
+          <small lang="ja">かんたん 5&nbsp;ステップ</small><small lang="en">5 easy steps</small>
+          <b lang="ja">はじめかたを見る ↓</b><b lang="en">See how to set up ↓</b>
+        </a>
+      </div>
+      <div class="chips">
+        <span class="chip" lang="ja">無料</span><span class="chip" lang="en">Free</span>
+        <span class="chip" lang="ja">アカウント登録なし</span><span class="chip" lang="en">No account needed</span>
+        <span class="chip" lang="ja">データを集めない</span><span class="chip" lang="en">No data collection</span>
+      </div>
+    </div>
+    <div class="hvis">
+      <div class="device">
+        <img src="img/guide/remote-ja.jpg" alt="iPhone に Mac の画面が映っているところ" lang="ja" width="1600" height="736">
+        <img src="img/guide/remote-en.jpg" alt="A Mac's screen shown on an iPhone" lang="en" width="1600" height="736">
+      </div>
+      <div class="device port float" aria-hidden="true">
+        <div class="scr">
+          <img src="img/guide/home-ja.jpg" alt="" lang="ja" width="598" height="1300">
+          <img src="img/guide/home-en.jpg" alt="" lang="en" width="598" height="1300">
+          <span class="tapat" style="left:50%;top:43.6%"></span>
+        </div>
+      </div>
+      <div class="live"><span lang="ja">スタジオの MacBook Pro を操作中</span><span lang="en">Controlling Studio MacBook Pro</span></div>
+    </div>
+  </div>
+
+  <nav class="toc" aria-label="もくじ">
+    <a href="#uses"><span lang="ja">こんなときに</span><span lang="en">Use cases</span></a>
+    <a href="#start"><span lang="ja">はじめかた</span><span lang="en">Setup</span></a>
+    <a href="#controls"><span lang="ja">操作のしかた</span><span lang="en">Controls</span></a>
+    <a href="#trouble"><span lang="ja">つながらないとき</span><span lang="en">Troubleshooting</span></a>
+    <a href="#away"><span lang="ja">外出先から</span><span lang="en">Away from home</span></a>
+    <a href="#safe"><span lang="ja">安心のしくみ</span><span lang="en">Privacy</span></a>
+    <a href="#faq"><span lang="ja">よくある質問</span><span lang="en">FAQ</span></a>
+  </nav>
+
+  <!-- こんなときに -->
+  <section id="uses">
+    <div class="shead rv">
+      <div class="kicker">USE CASES</div>
+      <h2 lang="ja">こんなときに、便利です。</h2>
+      <h2 lang="en">Handy for everyday moments.</h2>
+    </div>
+    <div class="uses">
+      <div class="use rv">
+        <div class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/></svg></div>
+        <h3 lang="ja">ソファやベッドから</h3><h3 lang="en">From the couch or bed</h3>
+        <p lang="ja">仕事部屋の Mac で動かしている書き出しやダウンロードを、iPhone でちらっと確認。</p>
+        <p lang="en">Check on an export or download running on the Mac in your office.</p>
+      </div>
+      <div class="use rv">
+        <div class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div>
+        <h3 lang="ja">離れた Mac を手元で</h3><h3 lang="en">A Mac across the room</h3>
+        <p lang="ja">Mac で流している音楽を止める・変える。ちょっとした操作のために立ち上がらなくていい。</p>
+        <p lang="en">Pause or change the music on your Mac without getting up.</p>
+      </div>
+      <div class="use rv">
+        <div class="ic"><svg class="i" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="m17 2-5 5-5-5"/></svg></div>
+        <h3 lang="ja">テレビにつないだ Mac</h3><h3 lang="en">A Mac on the TV</h3>
+        <p lang="ja">大きな画面につないだ Mac を、iPhone をトラックパッド代わりにして操作。</p>
+        <p lang="en">Use your iPhone as a trackpad for a Mac hooked up to a big screen.</p>
+      </div>
+      <div class="use rv">
+        <div class="ic"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg></div>
+        <h3 lang="ja">外出先から</h3><h3 lang="en">While you're out</h3>
+        <p lang="ja">家の Mac にある資料を、出先でさっと開いて確認（無料の Tailscale を使います）。</p>
+        <p lang="en">Open a file on your Mac at home while you're out (with the free Tailscale app).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- はじめかた -->
+  <section id="start">
+    <div class="shead rv">
+      <div class="kicker">GETTING STARTED</div>
+      <h2 lang="ja">はじめかた</h2>
+      <h2 lang="en">Setting up</h2>
+      <p lang="ja">準備は最初の一度だけ。次からは、アプリを開いて 1&nbsp;タップでつながります。</p>
+      <p lang="en">You only do this once. After that, open the app and connect with one tap.</p>
+    </div>
+
+    <div class="gsteps">
+      <!-- STEP 1 -->
+      <div class="gstep rv">
+        <div class="gtext">
+          <div class="snum"><b>1</b>STEP</div>
+          <h3 lang="ja">iPhone に PocketDesk を入れる</h3>
+          <h3 lang="en">Get PocketDesk on your iPhone</h3>
+          <p lang="ja">App Store から無料でダウンロードできます。アカウントの登録はいりません。</p>
+          <p lang="en">It's a free download from the App Store. No account to create.</p>
+          <div class="cta">
+            <a class="btn primary two" href="https://apps.apple.com/app/id6835004414">
+              <small lang="ja">iPhone 用・無料</small><small lang="en">Free for iPhone</small>
+              <b lang="ja">App Store で入手</b><b lang="en">Get it on the App Store</b>
+            </a>
+          </div>
+        </div>
+        <div class="gvis">
+          <div class="appcard">
+            <img src="img/icon.png" alt="">
+            <div class="t">
+              <b lang="ja">PocketDesk: Mac リモート操作</b><b lang="en">PocketDesk: Remote for Mac</b>
+              <span lang="ja">どこからでも Mac を操作</span><span lang="en">Control your Mac from anywhere</span>
+            </div>
+            <a class="get" href="https://apps.apple.com/app/id6835004414"><span lang="ja">入手</span><span lang="en">Get</span></a>
+          </div>
+          <div class="qrbox">
+            <img src="img/qr-appstore.svg" alt="App Store の PocketDesk のページを開く QR コード" lang="ja">
+            <img src="img/qr-appstore.svg" alt="QR code for PocketDesk on the App Store" lang="en">
+            <p lang="ja">このページを Mac で見ているなら、iPhone のカメラでこの QR コードを写すと App Store が開きます。</p>
+            <p lang="en">Reading this on your Mac? Point your iPhone's camera at this code to open the App Store.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 2 -->
+      <div class="gstep rv">
+        <div class="gtext">
+          <div class="snum"><b>2</b>STEP</div>
+          <h3 lang="ja">操作したい Mac に「PocketDesk Host」を入れる</h3>
+          <h3 lang="en">Install “PocketDesk Host” on the Mac you want to control</h3>
+          <ol class="mini" lang="ja">
+            <li>下のボタンで、Mac にダウンロードします</li>
+            <li>zip を開いて、出てきた <b>PocketDesk Host</b> を「アプリケーション」フォルダに入れます</li>
+            <li>開くと、画面の右上（メニューバー）に PocketDesk のアイコンが出ます</li>
+          </ol>
+          <ol class="mini" lang="en">
+            <li>Download it on your Mac with the button below</li>
+            <li>Open the zip and move <b>PocketDesk Host</b> to your Applications folder</li>
+            <li>Open it. A PocketDesk icon appears at the top right of your screen (the menu bar)</li>
+          </ol>
+          <div class="cta">
+            <a class="btn two" href="https://github.com/Shosuke24/pocketdesk/releases/latest/download/PocketDesk-Host.zip">
+              <small lang="ja">Mac 用・無料・macOS 14&nbsp;以降</small><small lang="en">Free for Mac · macOS 14 or later</small>
+              <b lang="ja">PocketDesk Host をダウンロード</b><b lang="en">Download PocketDesk Host</b>
+            </a>
+          </div>
+          <div class="sendmac onlym" lang="ja"><b>iPhone で見ているときは</b>　Mac のブラウザで <code>shosuke24.github.io/pocketdesk</code> を開いてダウンロードしてください。AirDrop でこのページを Mac に送るのがかんたんです。<br><button class="share" type="button">このページを Mac に送る</button></div>
+          <div class="sendmac onlym" lang="en"><b>On your iPhone right now?</b> Open <code>shosuke24.github.io/pocketdesk</code> in a browser on your Mac to download it. The easiest way is to AirDrop this page to your Mac.<br><button class="share" type="button">Send this page to my Mac</button></div>
+          <p class="tip" lang="ja"><strong>安心</strong>Apple の公証を受けたアプリです（Developer ID で署名済み）。</p>
+          <p class="tip" lang="en"><strong>Safe</strong>Signed with a Developer ID and notarized by Apple.</p>
+        </div>
+        <div class="gvis">
+          <div class="mac">
+            <div class="mbar">
+              <div class="l"><b>Finder</b><span lang="ja">ファイル</span><span lang="en">File</span><span lang="ja">編集</span><span lang="en">Edit</span></div>
+              <div class="r"><span class="pdi"><img src="img/icon.png" alt=""></span><span>10:24</span></div>
+            </div>
+            <div class="callout"><span lang="ja">ここにアイコンが出ます</span><span lang="en">Look for this icon</span></div>
+            <div class="flow">
+              <div class="fi"><div class="pic"><div class="zipi"></div></div>PocketDesk-Host.zip</div>
+              <div class="arr">→</div>
+              <div class="fi"><div class="pic"><div class="fold"></div></div><span lang="ja">アプリケーション</span><span lang="en">Applications</span></div>
+              <div class="arr">→</div>
+              <div class="fi"><div class="pic"><img class="appi" src="img/icon.png" alt=""></div>PocketDesk Host</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 3 -->
+      <div class="gstep rv">
+        <div class="gtext">
+          <div class="snum"><b>3</b>STEP</div>
+          <h3 lang="ja">Mac で 2&nbsp;つの許可をオンにする</h3>
+          <h3 lang="en">Turn on two permissions on the Mac</h3>
+          <p lang="ja">画面を iPhone に送るための「画面収録」と、クリックや文字を Mac に届けるための「アクセシビリティ」です。</p>
+          <p lang="en">“Screen Recording” sends your screen to the iPhone, and “Accessibility” lets clicks and typing reach your Mac.</p>
+          <ol class="mini" lang="ja">
+            <li>メニューバーの PocketDesk アイコンを押し、<b>「開く」</b>を押します</li>
+            <li>出てきた「システム設定」で、<b>PocketDesk Host をオン</b>にします</li>
+            <li>「終了して再度開く」と聞かれたら、それを押します</li>
+          </ol>
+          <ol class="mini" lang="en">
+            <li>Click the PocketDesk icon in the menu bar, then click <b>“Open”</b></li>
+            <li>In System Settings, <b>turn on PocketDesk Host</b></li>
+            <li>If asked, click “Quit &amp; Reopen”</li>
+          </ol>
+          <p class="tip" lang="ja"><strong>ヒント</strong>オンにすると、すぐに反映されます。Mac のパスワードか Touch ID を聞かれることがあります。</p>
+          <p class="tip" lang="en"><strong>Tip</strong>Changes apply right away. Your Mac may ask for your password or Touch ID.</p>
+        </div>
+        <div class="gvis">
+          <div class="set">
+            <div class="tb"><i></i><i></i><i></i><span lang="ja">プライバシーとセキュリティ</span><span lang="en">Privacy &amp; Security</span></div>
+            <div class="bd">
+              <div class="sg">
+                <h4 lang="ja">画面収録とシステムオーディオ録音</h4><h4 lang="en">Screen &amp; System Audio Recording</h4>
+                <div class="sr"><img src="img/icon.png" alt=""><span>PocketDesk Host</span><i class="tg t1"></i></div>
+              </div>
+              <div class="sg">
+                <h4 lang="ja">アクセシビリティ</h4><h4 lang="en">Accessibility</h4>
+                <div class="sr"><img src="img/icon.png" alt=""><span>PocketDesk Host</span><i class="tg t2"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 4 -->
+      <div class="gstep rv">
+        <div class="gtext">
+          <div class="snum"><b>4</b>STEP</div>
+          <h3 lang="ja">iPhone で QR コードを読み取る</h3>
+          <h3 lang="en">Scan the QR code with your iPhone</h3>
+          <ol class="mini" lang="ja">
+            <li>Mac のメニューバーの PocketDesk →<b>「新しい端末を追加…」</b></li>
+            <li>出てきた QR コードに iPhone のカメラをかざし、<b>「PocketDesk」で開く</b>（アプリの「QR コードで追加」でも読み取れます）</li>
+            <li>iPhone に「ローカルネットワーク」の確認が出たら「許可」を押します（家の中の Mac を見つけるため）</li>
+          </ol>
+          <ol class="mini" lang="en">
+            <li>On your Mac, choose PocketDesk → <b>“Add New Device…”</b> in the menu bar</li>
+            <li>Point your iPhone's camera at the QR code and <b>open it in PocketDesk</b> (or use “Add with QR Code” in the app)</li>
+            <li>If your iPhone asks about “Local Network”, tap “Allow” (so it can find your Mac at home)</li>
+          </ol>
+          <p class="tip" lang="ja"><strong>安心</strong>QR コードは 1&nbsp;回だけ使えて、10&nbsp;分で無効になります。Mac の前にいる人しかペアリングできません。</p>
+          <p class="tip" lang="en"><strong>Secure</strong>The QR code works once and expires in 10 minutes, so only someone at your Mac can pair.</p>
+        </div>
+        <div class="gvis">
+          <div class="pair">
+            <div class="pwin">
+              <div class="tb"><i></i><i></i><i></i></div>
+              <b lang="ja">新しい端末を追加</b><b lang="en">Add New Device</b>
+              <span class="mn" lang="ja">スタジオの MacBook Pro</span><span class="mn" lang="en">Studio MacBook Pro</span>
+              <div class="qrw"><img src="img/guide/qr-mock.svg" alt=""></div>
+              <span class="timer" lang="ja">1&nbsp;回だけ使えます・残り 9:58</span><span class="timer" lang="en">One-time use · 9:58 left</span>
+            </div>
+            <div class="sp" aria-hidden="true">
+              <div class="vf"><i></i><i></i><i></i><i></i><div class="q"><img src="img/guide/qr-mock.svg" alt=""></div></div>
+              <div class="bn"><span lang="ja">「PocketDesk」で開く</span><span lang="en">Open in “PocketDesk”</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 5 -->
+      <div class="gstep last rv">
+        <div class="gtext">
+          <div class="snum"><b>5</b>DONE</div>
+          <h3 lang="ja"><span class="nw">「接続する」をタップ。</span><span class="nw">これで完成！</span></h3>
+          <h3 lang="en">Tap “Connect”. You're all set!</h3>
+          <p lang="ja">Mac の画面が iPhone に映ります。次からは、アプリを開いて 1&nbsp;タップでつながります。</p>
+          <p lang="en">Your Mac's screen appears on your iPhone. Next time, just open the app and tap once.</p>
+          <p class="tip" lang="ja"><strong>おすすめ</strong>メニューバーの PocketDesk で「ログイン時に起動」をオンにしておくと、Mac を再起動してもすぐ使えます。</p>
+          <p class="tip" lang="en"><strong>Tip</strong>Turn on “Open at Login” from the PocketDesk menu bar icon so it's ready even after your Mac restarts.</p>
+        </div>
+        <div class="gvis">
+          <div class="device port">
+            <div class="scr">
+              <img src="img/guide/home-ja.jpg" alt="PocketDesk のホーム画面と「接続する」ボタン" lang="ja" width="598" height="1300">
+              <img src="img/guide/home-en.jpg" alt="PocketDesk home screen with the Connect button" lang="en" width="598" height="1300">
+              <span class="tapat" style="left:50%;top:43.6%"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 操作のしかた -->
+  <section id="controls">
+    <div class="shead rv">
+      <div class="kicker">CONTROLS</div>
+      <h2 lang="ja"><span class="nw">スマホと同じ感覚で、</span><span class="nw">操作できます。</span></h2>
+      <h2 lang="en">Feels just like using your phone.</h2>
+      <p lang="ja">触った場所をクリック。なぞればスクロール。iPad を使うような感覚で Mac を動かせます。最初に開いたときも、アプリが操作のしかたを案内します。</p>
+      <p lang="en">Touch to click, slide to scroll. Use your Mac the way you'd use an iPad. The app walks you through the gestures the first time, too.</p>
+    </div>
+
+    <div class="gestures">
+      <div class="g g-tap rv">
+        <div class="gx" aria-hidden="true"><div class="ico"></div><span class="rip"></span><span class="rip r2"></span><span class="f"></span></div>
+        <h3 lang="ja">触る／2&nbsp;回触る</h3><h3 lang="en">Touch / double-touch</h3>
+        <p lang="ja">その場所をクリック／ダブルクリック</p><p lang="en">Click / double-click right there</p>
+      </div>
+      <div class="g g-scroll rv">
+        <div class="gx" aria-hidden="true"><div class="w"><div class="list"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><span class="f"></span></div>
+        <h3 lang="ja">1&nbsp;本指でなぞる</h3><h3 lang="en">Slide one finger</h3>
+        <p lang="ja">スクロール（指を離しても慣性ですべる）</p><p lang="en">Scroll, with smooth momentum</p>
+      </div>
+      <div class="g g-long rv">
+        <div class="gx" aria-hidden="true">
+          <div class="w"><span class="ln" style="top:24%;width:60%"></span><span class="ln" style="top:38%;width:72%"></span><span class="ln" style="top:52%;width:48%"></span><span class="ln" style="top:66%;width:66%"></span></div>
+          <span class="ring"></span><span class="f"></span><div class="menu"><i></i><i></i><i></i><i></i></div>
+        </div>
+        <h3 lang="ja">長押し</h3><h3 lang="en">Long press</h3>
+        <p lang="ja">右クリック（2&nbsp;本指タップでも）</p><p lang="en">Right-click (or two-finger tap)</p>
+      </div>
+      <div class="g g-drag rv">
+        <div class="gx" aria-hidden="true"><div class="w mv"><span class="ln" style="top:40%;left:12%;width:70%"></span><span class="ln" style="top:62%;left:12%;width:50%"></span><span class="f"></span></div></div>
+        <h3 lang="ja">長押ししたまま動かす</h3><h3 lang="en">Long press, then move</h3>
+        <p lang="ja">ドラッグ（文字の選択・ウインドウの移動）</p><p lang="en">Drag (select text, move windows)</p>
+      </div>
+      <div class="g g-kbd rv">
+        <div class="gx" aria-hidden="true">
+          <div class="fld"><u></u></div><span class="rip"></span><span class="f"></span>
+          <div class="kb"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+        <h3 lang="ja">文字の入力欄を触る</h3><h3 lang="en">Touch a text field</h3>
+        <p lang="ja">キーボードが自動で出る。日本語の変換も iPhone で</p><p lang="en">The keyboard pops up automatically</p>
+      </div>
+      <div class="g g-pinch rv">
+        <div class="gx" aria-hidden="true">
+          <div class="zc"><div class="w"><span class="ln" style="top:30%;width:66%"></span><span class="ln" style="top:48%;width:50%"></span><span class="ln" style="top:66%;width:72%"></span></div></div>
+          <span class="f a"></span><span class="f b"></span>
+        </div>
+        <h3 lang="ja">ピンチ</h3><h3 lang="en">Pinch</h3>
+        <p lang="ja">拡大・縮小。小さな文字もくっきり</p><p lang="en">Zoom in and out to read small text</p>
+      </div>
+      <div class="g g-three rv">
+        <div class="gx" aria-hidden="true"><div class="w w1"></div><div class="w w2"></div><div class="fs"><span class="f"></span><span class="f"></span><span class="f"></span></div></div>
+        <h3 lang="ja">3&nbsp;本指で上・下</h3><h3 lang="en">Three fingers up / down</h3>
+        <p lang="ja">Mission Control・アプリのウインドウ（左右で操作スペースの切り替え）</p><p lang="en">Mission Control / App windows (left / right switches spaces)</p>
+      </div>
+      <div class="g g-track rv">
+        <div class="gx" aria-hidden="true"><div class="tgt"></div><div class="pad"><span class="f"></span></div><span class="cur"></span></div>
+        <h3 lang="ja">トラックパッドモード</h3><h3 lang="en">Trackpad mode</h3>
+        <p lang="ja">なぞってカーソルを動かし、タップでクリック。細かい作業に</p><p lang="en">Slide to move the pointer, tap to click. Great for precise work</p>
+      </div>
+    </div>
+
+    <div class="dock">
+      <div class="device rv">
+        <img src="img/guide/shortcuts-ja.jpg" alt="ショートカットの一覧を開いたところ" lang="ja" width="1600" height="736" loading="lazy">
+        <img src="img/guide/shortcuts-en.jpg" alt="The shortcuts panel" lang="en" width="1600" height="736" loading="lazy">
+      </div>
+      <div class="rv">
+        <h3 lang="ja">画面の端のボタンで、もっと便利に。</h3>
+        <h3 lang="en">More at the edge of the screen.</h3>
+        <ul class="keys">
+          <li><span class="k"><svg class="i" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M8 14h8"/></svg></span>
+            <div><b lang="ja">キーボード</b><b lang="en">Keyboard</b><span lang="ja">文字の入力。⌘ や矢印などの特別なキーも</span><span lang="en">Type, including ⌘, arrow keys and other special keys</span></div></li>
+          <li><span class="k">⌘</span>
+            <div><b lang="ja">ショートカット</b><b lang="en">Shortcuts</b><span lang="ja">コピー・ペースト・取り消し・保存などをワンタップで</span><span lang="en">Copy, paste, undo, save and more in one tap</span></div></li>
+          <li><span class="k"><svg class="i" viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6" rx="1.2"/><rect x="14" y="4" width="6" height="6" rx="1.2"/><rect x="4" y="14" width="6" height="6" rx="1.2"/><rect x="14" y="14" width="6" height="6" rx="1.2"/></svg></span>
+            <div><b lang="ja">アプリ</b><b lang="en">Apps</b><span lang="ja">開いているアプリを選んで、前に出す</span><span lang="en">Pick an open app and bring it to the front</span></div></li>
+          <li><span class="k"><svg class="i" viewBox="0 0 24 24"><path d="M7 4 3 8l4 4"/><path d="M3 8h14"/><path d="m17 20 4-4-4-4"/><path d="M21 16H7"/></svg></span>
+            <div><b lang="ja">タッチ／トラックパッド</b><b lang="en">Touch / Trackpad</b><span lang="ja">操作のしかたを切り替え</span><span lang="en">Switch how you control the Mac</span></div></li>
+          <li><span class="k">⋯</span>
+            <div><b lang="ja">メニュー</b><b lang="en">Menu</b><span lang="ja">画質・ディスプレイの切り替え・クリップボード・設定</span><span lang="en">Quality, displays, clipboard and settings</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- つながらないとき -->
+  <section id="trouble">
+    <div class="why">
+      <div class="device port rv">
+        <img src="img/guide/sleeping-ja.jpg" alt="「Mac がスリープしています」という案内" lang="ja" width="598" height="1300" loading="lazy">
+        <img src="img/guide/sleeping-en.jpg" alt="“Your Mac is asleep” message" lang="en" width="598" height="1300" loading="lazy">
+      </div>
+      <div class="rv">
+        <div class="kicker">NO GUESSWORK</div>
+        <h2 lang="ja"><span class="nw">つながらないときも、</span><span class="nw">迷いません。</span></h2>
+        <h2 lang="en">Never wonder why it won't connect.</h2>
+        <p lang="ja" style="color:var(--dim);margin-bottom:18px">「なぜつながらないのか」と「次にすること」を画面に出します。Mac が戻れば、自動でつなぎ直します。</p>
+        <p lang="en" style="color:var(--dim);margin-bottom:18px">PocketDesk tells you why and what to do next, and reconnects on its own when your Mac is back.</p>
+        <ul class="reasons">
+          <li><span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/></svg></span>
+            <div><b lang="ja">Mac がスリープしている</b><b lang="en">Your Mac is asleep</b><span lang="ja">起きたら自動でつなぎ直します</span><span lang="en">Reconnects when it wakes up</span></div></li>
+          <li><span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M12 2v10"/><path d="M18.4 6.6a9 9 0 1 1-12.8 0"/></svg></span>
+            <div><b lang="ja">PocketDesk Host が止まっている</b><b lang="en">PocketDesk Host isn't running</b><span lang="ja">Mac で開けば、すぐにつながります</span><span lang="en">Open it on your Mac and you're back</span></div></li>
+          <li><span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M2 8.8a15 15 0 0 1 20 0"/><path d="M5 12.6a10 10 0 0 1 14 0"/><path d="M8.5 16.4a5 5 0 0 1 7 0"/><path d="M12 20h.01"/></svg></span>
+            <div><b lang="ja">別の Wi-Fi にいる</b><b lang="en">You're on a different Wi-Fi</b><span lang="ja">同じ Wi-Fi か Tailscale でつながります</span><span lang="en">Use the same Wi-Fi, or Tailscale</span></div></li>
+          <li><span class="ic"><svg class="i" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span>
+            <div><b lang="ja">Mac の許可がオフになっている</b><b lang="en">A permission is off on the Mac</b><span lang="ja">どこをオンにすればいいか案内します</span><span lang="en">Shows exactly what to turn on</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 外出先から -->
+  <section id="away">
+    <div class="shead rv">
+      <div class="kicker">ANYWHERE</div>
+      <h2 lang="ja"><span class="nw">外出先からも、</span><span class="nw">いつもの Mac に。</span></h2>
+      <h2 lang="en">Reach your Mac from anywhere.</h2>
+      <p lang="ja">家では、準備なしでつながります。外から使うときだけ、無料のアプリ「Tailscale（テイルスケール）」を Mac と iPhone の両方に入れます。準備は最初の 1&nbsp;回だけ。あとは iPhone でスイッチを入れるだけです。</p>
+      <p lang="en">At home, it just works. To use it while you're out, add the free Tailscale app to both your Mac and your iPhone. Set it up once — after that, just flip a switch on your iPhone.</p>
+    </div>
+
+    <!-- どこで使う？ -->
+    <div class="where">
+      <div class="wcard rv">
+        <div class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></div>
+        <div>
+          <span class="tag" lang="ja">準備なし</span><span class="tag" lang="en">No setup</span>
+          <h3 lang="ja">家で使う</h3><h3 lang="en">At home</h3>
+          <small lang="ja">Mac と同じ Wi-Fi</small><small lang="en">Same Wi-Fi as your Mac</small>
+          <p lang="ja">アプリを開けば、そのままつながります。Tailscale はいりません。</p>
+          <p lang="en">Open the app and you're connected. No Tailscale needed.</p>
+        </div>
+      </div>
+      <div class="wcard out rv">
+        <div class="ic"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18"/></svg></div>
+        <div>
+          <span class="tag" lang="ja">Tailscale を使う</span><span class="tag" lang="en">Uses Tailscale</span>
+          <h3 lang="ja">外出先で使う</h3><h3 lang="en">Away from home</h3>
+          <small lang="ja">モバイル回線・カフェや職場の Wi-Fi など</small><small lang="en">Cellular, café or office Wi-Fi, and more</small>
+          <p lang="ja">下の準備を一度すれば、どこからでも家の Mac につながります。</p>
+          <p lang="en">Do the one-time setup below and reach your Mac from anywhere.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="route rv" aria-hidden="true">
+      <div class="node"><span class="ic"><svg class="i" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></span>
+        <span lang="ja">外出先の iPhone</span><span lang="en">iPhone, out</span></div>
+      <div class="link"><span>Tailscale<small lang="ja">あなた専用の暗号化された道</small><small lang="en">Your own encrypted path</small></span></div>
+      <div class="node"><span class="ic" style="background:rgba(255,61,204,.1);color:var(--pink)"><svg class="i" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="11" rx="1.5"/><path d="M2 19h20"/></svg></span>
+        <span lang="ja">家の Mac</span><span lang="en">Mac, at home</span></div>
+    </div>
+    <p class="whatis rv" lang="ja"><b>Tailscale とは？</b> あなたの iPhone と Mac だけをつなぐ、暗号化された専用の道を作るアプリです。ルーターの設定や、むずかしい知識はいりません。個人で使うなら無料です。</p>
+    <p class="whatis rv" lang="en"><b>What's Tailscale?</b> An app that makes a private, encrypted path between just your iPhone and your Mac. No router settings or networking know-how needed. Free for personal use.</p>
+
+    <!-- 準備 -->
+    <h3 class="subh rv"><span lang="ja">準備（最初の 1&nbsp;回だけ）</span><span lang="en">One-time setup</span></h3>
+    <div class="asteps">
+      <div class="astep rv">
+        <div class="snum"><b>1</b><span lang="ja">MAC で</span><span lang="en">ON YOUR MAC</span></div>
+        <h4 lang="ja">Mac に Tailscale を入れて、ログインする</h4>
+        <h4 lang="en">Install Tailscale on your Mac and sign in</h4>
+        <ol class="mini" lang="ja">
+          <li>Mac で <a href="https://tailscale.com/download/mac">Tailscale のダウンロードページ</a>を開き、Mac 版を入れます（Mac App Store 版でもかまいません）</li>
+          <li>Tailscale を開き、画面の案内にそってログイン。Google・Apple・Microsoft などのアカウントで入れます</li>
+          <li>VPN の追加などの確認が出たら「許可」</li>
+        </ol>
+        <ol class="mini" lang="en">
+          <li>On your Mac, open the <a href="https://tailscale.com/download/mac">Tailscale download page</a> and install the Mac version (the Mac App Store version works too)</li>
+          <li>Open Tailscale and follow the steps to sign in. You can use a Google, Apple or Microsoft account, among others</li>
+          <li>If you're asked to allow a VPN configuration, click Allow</li>
+        </ol>
+        <p class="tip" lang="ja"><strong>OK の目印</strong>メニューバーに Tailscale のアイコンが出ていれば準備完了です。</p>
+        <p class="tip" lang="en"><strong>You're set</strong>when the Tailscale icon shows up in the menu bar.</p>
+      </div>
+
+      <div class="astep rv">
+        <div class="snum"><b>2</b><span lang="ja">IPHONE で</span><span lang="en">ON YOUR IPHONE</span></div>
+        <h4 lang="ja">iPhone にも入れて、同じアカウントでログインする</h4>
+        <h4 lang="en">Install it on your iPhone and sign in with the same account</h4>
+        <ol class="mini" lang="ja">
+          <li>App Store で <a href="https://apps.apple.com/app/tailscale/id1470499037">Tailscale</a> を入れて開きます</li>
+          <li>Mac と<b>同じアカウント</b>でログインします（別のアカウントだとつながりません）</li>
+          <li>「VPN 構成の追加」を求められたら「許可」して、iPhone のパスコードを入れます</li>
+        </ol>
+        <ol class="mini" lang="en">
+          <li>Get <a href="https://apps.apple.com/app/tailscale/id1470499037">Tailscale</a> from the App Store and open it</li>
+          <li>Sign in with <b>the same account</b> you used on your Mac (a different account won't connect)</li>
+          <li>When asked to add a VPN configuration, tap Allow and enter your iPhone passcode</li>
+        </ol>
+      </div>
+
+      <div class="astep wide rv">
+        <div class="snum"><b>3</b><span lang="ja">家の WI-FI で</span><span lang="en">AT HOME</span></div>
+        <h4 lang="ja">家の Wi-Fi で、一度 PocketDesk をつなぐ</h4>
+        <h4 lang="en">Connect once with PocketDesk on your home Wi-Fi</h4>
+        <p lang="ja">Mac の Tailscale がオンのまま、いつもどおり PocketDesk で Mac につなぎます。これで iPhone が Mac の Tailscale のアドレスを<b>自動で覚えます</b>。数字を入力する必要はありません。</p>
+        <p lang="en">With Tailscale on, connect to your Mac in PocketDesk as usual. Your iPhone <b>remembers your Mac's Tailscale address automatically</b> — nothing to type.</p>
+        <p class="tip" lang="ja"><strong>すでに使っている人も</strong>Tailscale を入れたあとに、家で 1&nbsp;回つなげば OK です。</p>
+        <p class="tip" lang="en"><strong>Already using PocketDesk?</strong>Just connect once at home after installing Tailscale.</p>
+      </div>
+
+      <div class="astep wide rv">
+        <div class="snum"><b>4</b><span lang="ja">出かける前に</span><span lang="en">BEFORE YOU GO</span></div>
+        <h4 lang="ja">Mac が眠らない・ロックされないようにする</h4>
+        <h4 lang="en">Keep your Mac awake and unlocked</h4>
+        <p lang="ja">外から操作できるのは、Mac が起きていて、ロックされていないときだけです。ロック画面のパスワードは、離れた場所からは入力できません。</p>
+        <p lang="en">You can only take control while your Mac is awake and unlocked. The lock screen password can't be entered remotely.</p>
+        <ul class="bul" lang="ja">
+          <li><b>MacBook をスリープさせない</b>「システム設定」→「バッテリー」→「オプション…」で、「電源アダプタ使用時はディスプレイがオフのときに自動でスリープさせない」をオン。電源につなぎ、ふたは開けたままにします（閉じるとスリープします）</li>
+          <li><b>iMac・Mac mini などをスリープさせない</b>「システム設定」→「エネルギー」で、「自動でスリープさせない」の項目をオン</li>
+          <li><b>ロックしない</b>「システム設定」→「ロック画面」で、「スクリーンセーバの開始後またはディスプレイがオフになったあとにパスワードを要求」を「しない」に</li>
+        </ul>
+        <ul class="bul" lang="en">
+          <li><b>MacBook: don't sleep</b>System Settings → Battery → Options…, then turn on “Prevent automatic sleeping on power adapter when the display is off.” Keep it plugged in with the lid open (closing the lid puts it to sleep).</li>
+          <li><b>iMac, Mac mini, etc.: don't sleep</b>System Settings → Energy, then turn on the option to prevent automatic sleeping.</li>
+          <li><b>Don't lock</b>System Settings → Lock Screen, then set “Require password after screen saver begins or display is turned off” to Never.</li>
+        </ul>
+        <div class="anotes">
+        <p class="warn" lang="ja"><strong>注意</strong>ロックしない設定のあいだは、家にいる人がパスワードなしで Mac を使えます。外から使う日だけこの設定にするなど、使い分けてください。</p>
+        <p class="warn" lang="en"><strong>Heads-up</strong>While your Mac doesn't lock, anyone at home can use it without a password. Consider turning this on only on days you'll need it.</p>
+        <p class="tip" lang="ja"><strong>画面は消えていて OK</strong>PocketDesk でつなぐと、Mac の画面がつきます。</p>
+        <p class="tip" lang="en"><strong>The display can be off</strong>It turns on when you connect with PocketDesk.</p>
+        <p class="tip" lang="ja"><strong>出かける前に一度</strong>家でつないでみると安心です。macOS 15&nbsp;以降は、ときどき Mac に画面収録の確認が出て、Mac の前で「許可」を押す必要があります。</p>
+        <p class="tip" lang="en"><strong>Try it once before you leave.</strong>On macOS 15 and later, your Mac occasionally asks to confirm screen recording, and you have to click Allow at the Mac.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 外出先で -->
+    <h3 class="subh rv"><span lang="ja">外出先では、これだけ</span><span lang="en">When you're out</span></h3>
+    <div class="daily rv">
+      <div class="dstep"><b>1</b><span lang="ja"><span class="nw">iPhone の Tailscale を開いて、</span><span class="nw">オンにする</span></span><span lang="en">Open Tailscale on your iPhone and turn it on</span></div>
+      <div class="arrow" aria-hidden="true">→</div>
+      <div class="dstep"><b>2</b><span lang="ja"><span class="nw">PocketDesk を開いて、</span><span class="nw">いつもの Mac をタップ</span></span><span lang="en">Open PocketDesk and tap your Mac</span></div>
+    </div>
+    <p class="dnote rv" lang="ja">家に帰ったら、Tailscale はオンのままでも、オフにしてもかまいません。</p>
+    <p class="dnote rv" lang="en">Back home, you can leave Tailscale on or turn it off.</p>
+
+    <!-- つながらないとき -->
+    <h3 class="subh rv"><span lang="ja">外からつながらないとき</span><span lang="en">If it won't connect from outside</span></h3>
+    <p class="dnote rv" lang="ja" style="margin:-8px 0 16px">PocketDesk が理由を表示します。よく出るものと、することです。</p>
+    <p class="dnote rv" lang="en" style="margin:-8px 0 16px">PocketDesk tells you why. Here are the common ones and what to do.</p>
+    <ul class="fixes" lang="ja">
+      <li class="rv"><b>「この端末の Tailscale がオフです」</b><span>iPhone の Tailscale をオンにしてください。オンになると、自動でつなぎ直します。</span></li>
+      <li class="rv"><b>「Mac の Tailscale のアドレスがまだわかりません」</b><span>Mac の Tailscale にログインしているか確かめて、家の Wi-Fi で一度つないでください（準備 3）。</span></li>
+      <li class="rv"><b>「Mac から応答がありません」</b><span>Mac がスリープしていないか、Mac の Tailscale がオンかを確かめてください（準備 4）。</span></li>
+      <li class="rv"><b>「Mac はロックされています」</b><span>離れた場所からはロックを解除できません。次からは「ロックしない」設定にしてから出かけてください（準備 4）。</span></li>
+      <li class="rv"><b>「Mac で PocketDesk Host が動いていません」</b><span>Mac が再起動したあとは、Mac の前でログインするまでつながりません。</span></li>
+      <li class="rv"><b>「外からは、このままではつながりません」</b><span>上の準備 1〜3 がまだのようです。</span></li>
+    </ul>
+    <ul class="fixes" lang="en">
+      <li class="rv"><b>“Tailscale is off on this device”</b><span>Turn on Tailscale on your iPhone. PocketDesk reconnects as soon as it's on.</span></li>
+      <li class="rv"><b>“Your Mac's Tailscale address isn't known yet”</b><span>Make sure Tailscale on your Mac is signed in, then connect once on your home Wi-Fi (step 3).</span></li>
+      <li class="rv"><b>“No response from your Mac”</b><span>Check that your Mac isn't asleep and that Tailscale is on (step 4).</span></li>
+      <li class="rv"><b>“Your Mac is locked”</b><span>It can't be unlocked remotely. Next time, turn off locking before you leave (step 4).</span></li>
+      <li class="rv"><b>“PocketDesk Host isn't running on your Mac”</b><span>After your Mac restarts, it can't connect until someone logs in at the Mac.</span></li>
+      <li class="rv"><b>“Can't reach your Mac from here yet”</b><span>Steps 1–3 above haven't been done yet.</span></li>
+    </ul>
+
+    <!-- Tailscale について -->
+    <div class="tsnotes rv" lang="ja">
+      <h3>Tailscale について知っておきたいこと</h3>
+      <ul>
+        <li><b>料金：</b>個人の用途なら無料（Personal プラン）。仕事で使うときは、<a href="https://tailscale.com/pricing">Tailscale の料金プラン</a>を確かめてください。</li>
+        <li><b>安全：</b>Tailscale の道は暗号化されていて、その中で PocketDesk 自身の暗号化もかかったままです。回線によっては Tailscale の中継サーバーを通りますが、中身は Tailscale にも見えません。</li>
+        <li><b>ルーターの設定は不要：</b>ルーターのポートを開けて直接つなぐ方法は、安全のためおすすめしません。</li>
+      </ul>
+      <p class="tm">Tailscale は Tailscale Inc. の登録商標です。PocketDesk は Tailscale Inc. と提携していない、独立したアプリです。</p>
+    </div>
+    <div class="tsnotes rv" lang="en">
+      <h3>Good to know about Tailscale</h3>
+      <ul>
+        <li><b>Cost:</b> Free for personal use (Personal plan). For work use, check <a href="https://tailscale.com/pricing">Tailscale's pricing</a>.</li>
+        <li><b>Security:</b> Tailscale's path is encrypted, and PocketDesk's own encryption stays on inside it. On some networks traffic goes through Tailscale's relay servers, but Tailscale can't see the contents.</li>
+        <li><b>No router setup:</b> We don't recommend opening ports on your router to connect directly.</li>
+      </ul>
+      <p class="tm">Tailscale is a registered trademark of Tailscale Inc. PocketDesk is an independent app and is not affiliated with Tailscale Inc.</p>
+    </div>
+  </section>
+
+  <!-- 安心のしくみ -->
+  <section id="safe" class="safe">
+    <div class="shead rv">
+      <div class="kicker">PRIVACY</div>
+      <h2 lang="ja">安心して使える理由</h2>
+      <h2 lang="en">Private by design</h2>
+    </div>
+    <div class="grid">
+      <div class="card rv"><div class="ic"><svg class="i" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+        <h3 lang="ja">あなたの機器どうしだけ</h3><h3 lang="en">Only between your devices</h3>
+        <p lang="ja">画面も操作も、iPhone と Mac のあいだでやりとり。PocketDesk のサーバーはなく、通信は端末ごとの鍵で暗号化されます。外出先から Tailscale を通すときも、中身は暗号化されたままです。</p>
+        <p lang="en">Your screen and input go between your iPhone and Mac, encrypted with per-device keys. There are no PocketDesk servers, and traffic stays encrypted even through Tailscale.</p></div>
+      <div class="card rv"><div class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h3 lang="ja">Mac の前で許可した端末だけ</h3><h3 lang="en">Only devices you approve</h3>
+        <p lang="ja">知らない人の端末はつながれません。なくした端末は、Mac のメニューからいつでも取り消せます。</p>
+        <p lang="en">Strangers can't connect. Lost a phone? Remove it from the Mac's menu anytime.</p></div>
+      <div class="card rv"><div class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <h3 lang="ja">操作中は Mac に表示</h3><h3 lang="en">Always visible on the Mac</h3>
+        <p lang="ja">「◯◯ から操作中」が Mac の画面に出て、その場で切断できます。iPhone のアプリは Face ID でロックできます。</p>
+        <p lang="en">The Mac shows who's in control and can disconnect instantly. Lock the iPhone app with Face ID.</p></div>
+      <div class="card rv"><div class="ic"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C10 3 12 8 12 8s2-5 4.5-5a2.5 2.5 0 0 1 0 5"/></svg></div>
+        <h3 lang="ja">無料・登録なし・広告なし</h3><h3 lang="en">Free, no sign-up, no ads</h3>
+        <p lang="ja">アカウントもメールアドレスもいりません。使い方のデータも集めません。</p>
+        <p lang="en">No account or email address required. No tracking or data collection.</p></div>
+    </div>
+    <p class="more rv"><a href="./#security"><span lang="ja">暗号化のしくみをくわしく見る →</span><span lang="en">Learn more about the encryption →</span></a></p>
+  </section>
+
+  <!-- よくある質問 -->
+  <section id="faq">
+    <div class="shead rv">
+      <div class="kicker">FAQ</div>
+      <h2 lang="ja">よくある質問</h2>
+      <h2 lang="en">Frequently asked questions</h2>
+    </div>
+    <div class="faq" lang="ja">
+      <details><summary>お金はかかりますか？</summary><p>かかりません。iPhone の PocketDesk も Mac の PocketDesk Host も無料で、アプリ内課金や広告もありません。外出先から使うときの Tailscale も、個人の用途なら無料です（仕事で使うときは <a href="https://tailscale.com/pricing">Tailscale の料金プラン</a>を確かめてください）。</p></details>
+      <details><summary>Windows のパソコンも操作できますか？</summary><p>いいえ。操作される側は Mac（macOS 14&nbsp;以降）だけです。</p></details>
+      <details><summary>Android や、別の Mac から操作できますか？</summary><p>Android 版と、Mac から操作する版を準備中です。公開したら、このサイトでお知らせします。</p></details>
+      <details><summary>Mac と iPhone が同じ Wi-Fi でないと使えませんか？</summary><p>家の中では同じ Wi-Fi が必要です。外出先からは、Mac と iPhone の両方に無料の Tailscale を入れると使えます（<a href="#away">外出先から</a>）。</p></details>
+      <details><summary>Mac がスリープするとどうなりますか？</summary><p>スリープ中はつながりません。Mac が起きれば、自動でつなぎ直します。外から使う日は、Mac がスリープ・ロックしないようにしておいてください（<a href="#away">設定のしかた</a>）。</p></details>
+      <details><summary>Tailscale を使うと、画面の中身を見られませんか？</summary><p>見られません。Tailscale の道は暗号化されていて、その中で PocketDesk 自身の暗号化もかかったままです。中継サーバーを通るときも、中身は Tailscale にも見えません。</p></details>
+      <details><summary>ほかの人に Mac を操作されませんか？</summary><p>Mac の前で許可した端末しかつながれません。操作中は Mac の画面に表示が出るので、気づかないうちに操作されることはありません。端末をなくしたときは、Mac のメニューバーの PocketDesk からその端末の許可を取り消してください。</p></details>
+      <details><summary>画面が真っ暗、またはクリックが届きません</summary><p>Mac の「画面収録」か「アクセシビリティ」の許可がオフになっています。アプリに直し方が出るので、そのとおりにオンにしてください。くわしくは<a href="support.html">サポート</a>へ。</p></details>
+    </div>
+    <div class="faq" lang="en">
+      <details><summary>Does it cost anything?</summary><p>No. Both PocketDesk for iPhone and PocketDesk Host for Mac are free, with no in-app purchases or ads. Tailscale, for use away from home, is free for personal use (for work use, check <a href="https://tailscale.com/pricing">Tailscale's pricing</a>).</p></details>
+      <details><summary>Can I control a Windows PC?</summary><p>No. The computer you control must be a Mac running macOS 14 or later.</p></details>
+      <details><summary>Can I control my Mac from Android or another Mac?</summary><p>Versions for Android and for controlling from a Mac are on the way. We'll announce them on this site.</p></details>
+      <details><summary>Do my Mac and iPhone need to be on the same Wi-Fi?</summary><p>At home, yes. From anywhere else, install the free Tailscale on both (see <a href="#away">Away from home</a>).</p></details>
+      <details><summary>What happens when my Mac goes to sleep?</summary><p>You can't connect while it's asleep. When it wakes up, PocketDesk reconnects on its own. If you'll be using it while you're out, keep your Mac awake and unlocked (<a href="#away">how</a>).</p></details>
+      <details><summary>Can Tailscale see my screen?</summary><p>No. Tailscale's path is encrypted, and PocketDesk's own encryption stays on inside it. Even through Tailscale's relay servers, the contents stay hidden from Tailscale.</p></details>
+      <details><summary>Could someone else control my Mac?</summary><p>Only devices approved at your Mac can connect, and the Mac always shows when it's being controlled. If you lose a device, remove its access from the PocketDesk menu bar icon.</p></details>
+      <details><summary>The screen is black, or clicks don't work</summary><p>“Screen Recording” or “Accessibility” is off for PocketDesk Host. The app shows how to fix it. See <a href="support.html">Support</a> for more.</p></details>
+    </div>
+  </section>
+
+  <!-- 最後の呼びかけ -->
+  <section>
+    <div class="final rv">
+      <h2 lang="ja"><span class="grad">Mac を、ポケットに。</span></h2>
+      <h2 lang="en"><span class="grad">Your Mac, in your pocket.</span></h2>
+      <p lang="ja">無料ではじめられます。アカウントの登録もいりません。</p>
+      <p lang="en">Free to get started. No account needed.</p>
+      <div class="cta">
+        <a class="btn primary two" href="https://apps.apple.com/app/id6835004414">
+          <small lang="ja">iPhone 用・無料</small><small lang="en">Free for iPhone</small>
+          <b lang="ja">App Store で入手</b><b lang="en">Get it on the App Store</b>
+        </a>
+        <a class="btn two" href="https://github.com/Shosuke24/pocketdesk/releases/latest/download/PocketDesk-Host.zip">
+          <small lang="ja">Mac 用・無料・macOS 14&nbsp;以降</small><small lang="en">Free for Mac · macOS 14 or later</small>
+          <b lang="ja">PocketDesk Host をダウンロード</b><b lang="en">Download PocketDesk Host</b>
+        </a>
+      </div>
+      <div class="qrbox">
+        <img src="img/qr-appstore.svg" alt="App Store の PocketDesk のページを開く QR コード" lang="ja">
+        <img src="img/qr-appstore.svg" alt="QR code for PocketDesk on the App Store" lang="en">
+        <p lang="ja">iPhone のカメラで写すと、App Store の PocketDesk が開きます。</p>
+        <p lang="en">Scan with your iPhone's camera to open PocketDesk on the App Store.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <a href="./"><span lang="ja">トップ</span><span lang="en">Home</span></a>
+      <a href="guide.html"><span lang="ja">使い方</span><span lang="en">Guide</span></a>
+      <a href="support.html"><span lang="ja">サポート</span><span lang="en">Support</span></a>
+      <a href="privacy.html"><span lang="ja">プライバシーポリシー</span><span lang="en">Privacy Policy</span></a>
+      <a href="https://github.com/Shosuke24/pocketdesk/releases"><span lang="ja">リリース</span><span lang="en">Releases</span></a>
+    </nav>
+    <div>© 2026 PocketDesk</div>
+  </footer>
+</div>
+<script src="lang.js"></script>
+<script src="guide.js"></script>
+<script src="share.js"></script>
+</body>
+</html>

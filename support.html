@@ -13,7 +13,13 @@
 <div class="wrap">
   <header>
     <a class="brand" href="./"><img src="img/icon.png" alt=""><span class="grad">PocketDesk</span></a>
-    <div class="langs"><button data-lang="ja">日本語</button> <button data-lang="en">English</button></div>
+    <div class="hright">
+      <nav class="nav">
+        <a href="guide.html"><span lang="ja">使い方</span><span lang="en">Guide</span></a>
+        <a class="wide" href="support.html" aria-current="page"><span lang="ja">サポート</span><span lang="en">Support</span></a>
+      </nav>
+      <div class="langs"><button data-lang="ja">日本語</button> <button data-lang="en">English</button></div>
+    </div>
   </header>
 
   <article class="doc" lang="ja">
@@ -22,7 +28,7 @@
 
     <h2>よくある質問</h2>
     <details><summary>Mac につながりません</summary>
-      <p>Mac で PocketDesk Host が動いているか（メニューバーにアイコンがあるか）、Mac がスリープしていないか、同じ Wi-Fi にいるかを確かめてください。外出先からは <a href="./#away">Tailscale</a> が必要です。</p></details>
+      <p>Mac で PocketDesk Host が動いているか（メニューバーにアイコンがあるか）、Mac がスリープしていないか、同じ Wi-Fi にいるかを確かめてください。外出先からは Tailscale が必要で、Mac がスリープ・ロックしていないことも必要です（<a href="guide.html#away">外出先からの設定のしかた</a>）。</p></details>
     <details><summary>画面が映らない・真っ暗です</summary>
       <p>Mac の「システム設定」→「プライバシーとセキュリティ」→「画面収録とシステムオーディオ録音」で PocketDesk Host をオンにしてください。Mac に聞かれたら「終了して再度開く」を選びます。</p></details>
     <details><summary>見えるのにクリックや文字入力が届きません</summary>
@@ -44,7 +50,7 @@
 
     <h2>FAQ</h2>
     <details><summary>I can't connect to my Mac</summary>
-      <p>Make sure PocketDesk Host is running on the Mac (its icon is in the menu bar), the Mac isn't asleep, and you're on the same Wi-Fi. To connect from elsewhere you need <a href="./#away">Tailscale</a>.</p></details>
+      <p>Make sure PocketDesk Host is running on the Mac (its icon is in the menu bar), the Mac isn't asleep, and you're on the same Wi-Fi. To connect from elsewhere you need Tailscale, and your Mac must stay awake and unlocked (<a href="guide.html#away">how to set it up</a>).</p></details>
     <details><summary>The screen is black or doesn't appear</summary>
       <p>On the Mac, open System Settings &gt; Privacy &amp; Security &gt; Screen &amp; System Audio Recording and turn on PocketDesk Host. If asked, choose "Quit &amp; Reopen".</p></details>
     <details><summary>I can see the screen, but clicks and typing don't work</summary>
@@ -63,6 +69,7 @@
   <footer>
     <nav>
       <a href="./"><span lang="ja">トップ</span><span lang="en">Home</span></a>
+      <a href="guide.html"><span lang="ja">使い方</span><span lang="en">Guide</span></a>
       <a href="privacy.html"><span lang="ja">プライバシーポリシー</span><span lang="en">Privacy Policy</span></a>
     </nav>
     <div>© 2026 PocketDesk</div>

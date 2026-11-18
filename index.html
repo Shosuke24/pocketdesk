@@ -7,6 +7,13 @@
 <meta name="title-ja" content="PocketDesk — Mac を、ポケットに。">
 <meta name="title-en" content="PocketDesk — Your Mac, in your pocket.">
 <meta name="description" content="iPhone や別の Mac から、あなたの Mac を操作するリモートアプリ。Control your Mac from your iPhone or another Mac.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PocketDesk">
+<meta property="og:title" content="PocketDesk — Mac を、ポケットに。">
+<meta property="og:description" content="iPhone から、いつもの Mac をそのまま操作。触って押す、なぞってスクロール。無料・アカウント登録なし。">
+<meta property="og:url" content="https://shosuke24.github.io/pocketdesk/">
+<meta property="og:image" content="https://shosuke24.github.io/pocketdesk/img/hero-ja.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.png">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -14,7 +21,13 @@
 <div class="wrap">
   <header>
     <a class="brand" href="./"><img src="img/icon.png" alt=""><span class="grad">PocketDesk</span></a>
-    <div class="langs"><button data-lang="ja">日本語</button> <button data-lang="en">English</button></div>
+    <div class="hright">
+      <nav class="nav">
+        <a href="guide.html"><span lang="ja">使い方</span><span lang="en">Guide</span></a>
+        <a class="wide" href="support.html"><span lang="ja">サポート</span><span lang="en">Support</span></a>
+      </nav>
+      <div class="langs"><button data-lang="ja">日本語</button> <button data-lang="en">English</button></div>
+    </div>
   </header>
 
   <div class="hero">
@@ -22,15 +35,19 @@
     <p class="lead" lang="ja">iPhone から、いつもの Mac をそのまま操作。触って押す、なぞってスクロール。通信は端末ごとの鍵で暗号化され、ペアリングした機器とだけつながります。</p>
     <p class="lead" lang="en">Control your Mac from your iPhone, just as if you were in front of it. Tap to click, swipe to scroll. Every connection is encrypted with per-device keys and only talks to devices you've paired.</p>
     <div class="cta">
-      <a class="btn primary" id="dl" href="https://github.com/Shosuke24/pocketdesk/releases/latest/download/PocketDesk-Host.zip">
-        <span lang="ja">Mac 用 PocketDesk Host をダウンロード</span><span lang="en">Download PocketDesk Host for Mac</span>
+      <a class="btn primary two" id="appstore" href="https://apps.apple.com/app/id6835004414">
+        <small lang="ja">iPhone 用・無料</small><small lang="en">Free for iPhone</small>
+        <b lang="ja">App Store で入手</b><b lang="en">Get it on the App Store</b>
       </a>
-      <a class="btn disabled" id="appstore" href="#">
-        <span lang="ja">App Store（近日公開）</span><span lang="en">App Store (coming soon)</span>
+      <a class="btn two" id="dl" href="https://github.com/Shosuke24/pocketdesk/releases/latest/download/PocketDesk-Host.zip">
+        <small lang="ja">操作される Mac 用・無料</small><small lang="en">For the Mac you control · Free</small>
+        <b lang="ja">PocketDesk Host をダウンロード</b><b lang="en">Download PocketDesk Host</b>
       </a>
     </div>
-    <p class="note" lang="ja">Host は macOS 14 以降。Apple の公証済み（Developer ID）です。</p>
-    <p class="note" lang="en">PocketDesk Host requires macOS 14 or later and is notarized by Apple (Developer ID).</p>
+    <p class="note" lang="ja">Host は macOS 14 以降。Apple の公証済み（Developer ID）です。はじめての方は <a href="guide.html">使い方ガイド</a> へ。</p>
+    <p class="note" lang="en">PocketDesk Host requires macOS 14 or later and is notarized by Apple (Developer ID). New here? See the <a href="guide.html">guide</a>.</p>
+    <div class="sendmac onlym" lang="ja" style="max-width:520px;margin:16px auto 0;text-align:left"><b>iPhone で見ているときは</b>　PocketDesk Host は Mac に入れるアプリです。Mac のブラウザでこのページを開いてダウンロードしてください（AirDrop で Mac に送るのがかんたんです）。<br><button class="share" type="button">このページを Mac に送る</button></div>
+    <div class="sendmac onlym" lang="en" style="max-width:520px;margin:16px auto 0;text-align:left"><b>On your iPhone right now?</b> PocketDesk Host goes on your Mac. Open this page in a browser on your Mac to download it (AirDrop is the easiest way to send it).<br><button class="share" type="button">Send this page to my Mac</button></div>
     <img class="shot" src="img/hero-ja.jpg" alt="iPhone で Mac を操作している画面" lang="ja">
     <img class="shot" src="img/hero-en.jpg" alt="Controlling a Mac from an iPhone" lang="en">
   </div>
@@ -43,11 +60,13 @@
       <li><b>Mac で 2 つの許可をオンにする</b><span>「システム設定」→「プライバシーとセキュリティ」で、「画面収録とシステムオーディオ録音」と「アクセシビリティ」の PocketDesk Host をオンにします（画面を送る・クリックや文字を届けるため）。</span></li>
       <li><b>iPhone でペアリング</b><span>メニューバーの PocketDesk →「新しい端末を追加…」で出る QR コードを、iPhone の PocketDesk で読み取ります。次からは 1 タップでつながります。</span></li>
     </ol>
+    <p class="more" lang="ja" style="margin-top:16px"><a href="guide.html#start">画像つきの使い方ガイドを見る →</a></p>
     <ol class="steps" lang="en">
       <li><b>Install PocketDesk Host on the Mac you want to control</b><span>Download it above, unzip it, move it to your Applications folder and open it. A PocketDesk icon appears in the menu bar.</span></li>
       <li><b>Turn on two permissions on the Mac</b><span>In System Settings &gt; Privacy &amp; Security, turn on PocketDesk Host under "Screen &amp; System Audio Recording" and "Accessibility" (to send the screen and to deliver clicks and typing).</span></li>
       <li><b>Pair your iPhone</b><span>Choose PocketDesk &gt; "Add New Device…" in the menu bar and scan the QR code with the PocketDesk app. After that, connecting is one tap.</span></li>
     </ol>
+    <p class="more" lang="en" style="margin-top:16px"><a href="guide.html#start">See the illustrated guide →</a></p>
   </section>
 
   <section>
@@ -76,7 +95,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="security">
     <h2 lang="ja">安全のために</h2>
     <h2 lang="en">Built for privacy and security</h2>
     <div class="grid">
@@ -86,9 +105,9 @@
       <div class="card"><h3 lang="ja">Mac の前で承認</h3><h3 lang="en">Approved at the Mac</h3>
         <p lang="ja">新しい端末は、Mac に出る QR コードか、両方に出る 6 桁の番号を確かめて許可したものだけ。いつでも取り消せます。</p>
         <p lang="en">New devices need the QR code shown on the Mac, or a matching 6-digit code approved at the Mac. Revoke access anytime.</p></div>
-      <div class="card"><h3 lang="ja">サーバーを通らない</h3><h3 lang="en">No servers in between</h3>
-        <p lang="ja">画面も操作も、あなたの機器どうしで直接やりとりします。PocketDesk のサーバーはなく、データを集めません。</p>
-        <p lang="en">Your screen and input go directly between your own devices. There are no PocketDesk servers and no data collection.</p></div>
+      <div class="card"><h3 lang="ja">PocketDesk のサーバーなし</h3><h3 lang="en">No PocketDesk servers</h3>
+        <p lang="ja">画面も操作も、あなたの機器どうしでやりとりします。PocketDesk のサーバーはなく、データを集めません。外出先から Tailscale を通すときも、中身は暗号化されたままです。</p>
+        <p lang="en">Your screen and input go between your own devices. There are no PocketDesk servers and no data collection, and traffic stays encrypted even through Tailscale.</p></div>
       <div class="card"><h3 lang="ja">操作中はわかる</h3><h3 lang="en">Always visible</h3>
         <p lang="ja">操作されている間は Mac の画面に表示が出て、その場で切断できます。iPhone 側は Face ID でロックできます。</p>
         <p lang="en">While connected, the Mac shows who is in control and can disconnect them instantly. The iPhone app can lock with Face ID.</p></div>
@@ -98,18 +117,22 @@
   <section id="away">
     <h2 lang="ja">外出先から使うには</h2>
     <h2 lang="en">Using it away from home</h2>
-    <p lang="ja">家の Wi-Fi では設定なしでつながります。外から使うときは、無料の <a href="https://tailscale.com/download">Tailscale</a> を使います。</p>
-    <p lang="en">On your home Wi-Fi it just works. To connect from anywhere, use the free <a href="https://tailscale.com/download">Tailscale</a>.</p>
+    <p lang="ja">家の Wi-Fi では設定なしでつながります。外から使うときだけ、無料のアプリ <a href="https://tailscale.com/download">Tailscale</a>（テイルスケール）を Mac と iPhone に入れます。準備は最初の 1&nbsp;回だけです。</p>
+    <p lang="en">On your home Wi-Fi it just works. To connect from anywhere, add the free <a href="https://tailscale.com/download">Tailscale</a> app to your Mac and iPhone. You only set it up once.</p>
     <ol class="steps" lang="ja" style="margin-top:14px">
       <li><b>Mac と iPhone の両方に Tailscale を入れる</b><span>同じアカウントでログインします。</span></li>
       <li><b>家の Wi-Fi で一度 PocketDesk をつなぐ</b><span>Mac の Tailscale のアドレスを自動で覚えます。</span></li>
-      <li><b>外では iPhone の Tailscale をオンにしてつなぐ</b><span>Mac は電源を入れたまま（スリープさせない）にしておきます。</span></li>
+      <li><b>Mac がスリープ・ロックしないようにして出かける</b><span>ロック画面のパスワードは、離れた場所からは入力できないためです。</span></li>
+      <li><b>外では iPhone の Tailscale をオンにしてつなぐ</b><span>あとはいつもどおり、PocketDesk で Mac をタップするだけです。</span></li>
     </ol>
+    <p class="more" lang="ja"><a href="guide.html#away">くわしい設定のしかたを見る →</a></p>
     <ol class="steps" lang="en" style="margin-top:14px">
       <li><b>Install Tailscale on both your Mac and iPhone</b><span>Sign in with the same account.</span></li>
       <li><b>Connect once with PocketDesk on your home Wi-Fi</b><span>PocketDesk remembers your Mac's Tailscale address automatically.</span></li>
-      <li><b>When you're out, turn on Tailscale on your iPhone and connect</b><span>Keep your Mac powered on and awake.</span></li>
+      <li><b>Keep your Mac awake and unlocked before you leave</b><span>The lock screen password can't be entered remotely.</span></li>
+      <li><b>When you're out, turn on Tailscale on your iPhone and connect</b><span>Then just tap your Mac in PocketDesk as usual.</span></li>
     </ol>
+    <p class="more" lang="en"><a href="guide.html#away">See the step-by-step setup →</a></p>
   </section>
 
   <section>
@@ -118,17 +141,18 @@
     <ul class="doc" lang="ja" style="padding-left:22px">
       <li>iPhone：iOS 17 以降</li>
       <li>操作される Mac（PocketDesk Host）：macOS 14 以降</li>
-      <li>Mac から操作する場合（PocketDesk for Mac）：macOS 15 以降</li>
+      <li>Android 版・Mac から操作する版：準備中</li>
     </ul>
     <ul class="doc" lang="en" style="padding-left:22px">
       <li>iPhone: iOS 17 or later</li>
       <li>Mac being controlled (PocketDesk Host): macOS 14 or later</li>
-      <li>Controlling from a Mac (PocketDesk for Mac): macOS 15 or later</li>
+      <li>Android and Mac controller apps: coming soon</li>
     </ul>
   </section>
 
   <footer>
     <nav>
+      <a href="guide.html"><span lang="ja">使い方</span><span lang="en">Guide</span></a>
       <a href="support.html"><span lang="ja">サポート</span><span lang="en">Support</span></a>
       <a href="privacy.html"><span lang="ja">プライバシーポリシー</span><span lang="en">Privacy Policy</span></a>
       <a href="https://github.com/Shosuke24/pocketdesk/releases"><span lang="ja">リリース</span><span lang="en">Releases</span></a>
@@ -137,5 +161,6 @@
   </footer>
 </div>
 <script src="lang.js"></script>
+<script src="share.js"></script>
 </body>
 </html>
